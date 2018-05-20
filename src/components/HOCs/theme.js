@@ -1,5 +1,6 @@
 import React from 'react'
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles'
+import { MuiThemeProvider, createMuiTheme } from '../UI/styles'
+import blue from '@material-ui/core/colors/blue'
 
 const muiTheme = createMuiTheme({
   textEllipsis: {
@@ -7,22 +8,17 @@ const muiTheme = createMuiTheme({
     overflow: 'hidden',
     'text-overflow': 'ellipsis'
   },
-  label: '#BD7468',
+  mixins: {
+    // toolbar: {
+    //   minHeight: 48,
+    //   '@media (min-width:600px)': {
+    //     minHeight: 48
+    //   }
+    // }
+  },
   palette: {
     primary: {
-      main: '#ffffff',
-      light: '#ffffff',
-      dark: '#cccccc',
-      contrastText: '#504F4F'
-    },
-    secondary: {
-      main: '#f4b13e',
-      light: '#ffe36f',
-      dark: '#bd8200',
-      contrastText: '#504F4F'
-    },
-    background: {
-      grey: '#F6F6F6'
+      main: blue[400]
     }
   },
   typography: {
