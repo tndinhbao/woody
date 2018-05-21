@@ -36,7 +36,7 @@ const App = withStyles(theme => ({
   },
   homeSlider: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
   newArrival: {
     padding: theme.spacing.unit * 10,
